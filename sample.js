@@ -3,5 +3,7 @@ practice.addEventListener('click',rename);
 
 function rename(){
     let name = prompt('文章を入力してください。※入力後訂正不可');
-    practice.textContent = practice.textContent + name;
+    if(name !== null) {
+        practice.textContent = practice.textContent + name;
+    }
 };
